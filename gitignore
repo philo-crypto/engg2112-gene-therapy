@@ -1,0 +1,16 @@
+# Generated data files (large, regenerated locally)
+training_data.csv
+data/
+*.log
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Cached intermediate data
+data/rmsk_*.csv
+
+# OS files
+.DS_Store
+Thumbs.db
