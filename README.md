@@ -134,5 +134,4 @@ python patient_gene_v3/run_models.py
 
 ## Authors
 
-Group 3 — Tadhg Stuckey, Mahmoud Alhyari, Philo, Xiaowei Sun
-Faculty of Engineering, University of Sydney, 2026
+Group 3 — Tadhg Stuckey, Mahmoud Alhyari, Philopatir Khalil, Xiaowei Sun
