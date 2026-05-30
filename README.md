@@ -87,4 +87,4 @@ The stacking ensemble combines LightGBM, XGBoost, and Random Forest via a Ridge 
 ---
 
 ## Authors
-Group 3 — Tadhg Stuckey, Mahmoud Alhyari, Philo, Xiaowei Sun
+Group 3 — Tadhg Stuckey, Mahmoud Alhyari, Philopatir Khalil, Xiaowei Sun
