@@ -1,6 +1,6 @@
 # Predicting Insertional Mutagenesis Risk in Gene Therapy
 
-**ENGG2112 — Group 3 — University of Sydney**
+**ENGG2112 — Group 3**
 
 A machine learning pipeline that predicts which genomic integration sites in lentiviral gene therapy are most likely to drive clonal expansion, using genomic and epigenomic features. The goal is to support prospective risk stratification, shifting clinical monitoring from retrospective detection to forward-looking risk prioritisation.
 
@@ -84,55 +84,7 @@ The stacking ensemble combines LightGBM, XGBoost, and Random Forest via a Ridge 
 └── patient_gene_v3/               Final models: stacking ensemble, LambdaRank,
                                     pairwise ranking, MLP
 ```
-
----
-
-## Setup
-
-Python 3.10+ required.
-
-```bash
-pip install -r requirements.txt
-```
-
----
-
-## How to Run
-
-**1. Download the study data**
-```bash
-python download_study_data.py
-python download_external_is_data.py
-```
-
-**2. Generate feature tables** (per-chromosome feature CSVs are already included, but can be regenerated)
-```bash
-python run_all_chroms.py
-```
-
-**3. Build the training dataset**
-```bash
-python build_training_data.py
-```
-This produces `training_data.csv` (generated locally, not stored in the repo).
-
-**4. Train and evaluate models**
-```bash
-python patient_gene_v3/run_models.py
-```
-
----
-
-## Notes
-
-- All genomic coordinates use GRCh38 / hg38.
-- `training_data.csv` and raw data files are generated locally and excluded from the repository via `.gitignore` due to their size.
-- All API calls use public endpoints; no credentials are required.
-- Per-chromosome feature CSVs (`chr1` through `chrY`) are included so the training step can be run without regenerating features.
-
 ---
 
 ## Authors
-
 Group 3 — Tadhg Stuckey, Mahmoud Alhyari, Philo, Xiaowei Sun
-Faculty of Engineering, University of Sydney, 2026
