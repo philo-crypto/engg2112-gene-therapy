@@ -1,6 +1,6 @@
 # Predicting Insertional Mutagenesis Risk in Gene Therapy
 
-**ENGG2112 — Group 3 — University of Sydney**
+**ENGG2112 — Group 3**
 
 A machine learning pipeline that predicts which genomic integration sites in lentiviral gene therapy are most likely to drive clonal expansion, using genomic and epigenomic features. The goal is to support prospective risk stratification, shifting clinical monitoring from retrospective detection to forward-looking risk prioritisation.
 
