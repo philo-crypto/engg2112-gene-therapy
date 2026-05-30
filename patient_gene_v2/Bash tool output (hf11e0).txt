@@ -1,0 +1,22 @@
+INFO: Columns: ['patient_id', 'chrom', 'site_pos', 'label', 'max_raw_abundance', 'max_rel_abundance', 'n_samples_detected', 'growth_rate', 'abundance_fold_change', 'n_patients_with_site', 'dist_to_nearest_tss', 'nearest_gene_name', 'in_gene_body', 'dist_to_nearest_cancer_tss', 'nearest_cancer_gene_name', 'gene_length', 'in_repeat', 'cpg_island_count', 'cpg_nearest_dist', 'cpg_mean_obs_exp', 'encode_ccre_count', 'encode_promoter_count', 'encode_enhancer_count', 'encode_ctcf_count', 'ot_cancer_hallmark_count', 'ot_disease_count', 'ot_is_cancer_driver', 'tcell_h3k27ac_count', 'replication_timing', 'patient_id_enc']
+Train: 63,812  Val: 4,873  Test: 7,717  Features: 20
+  Best val RMSE: 0.263098  params: {'objective': 'regression', 'metric': 'rmse', 'learning_rate': 0.05, 'subsample': 0.8, 'colsample_bytree': 0.8, 'seed': 42, 'verbose': -1, 'max_depth': 7, 'num_leaves': 31, 'min_child_samples': 5, 'reg_lambda': 0.1}
+STEP 5: Evaluation
+  Train:
+    Spearman rho:  0.4377
+    Top-20% lift:  2.06x  (random = 1.0x)
+  Val   (chr2):
+    Spearman rho:  0.3490
+    Top-20% lift:  1.76x  (random = 1.0x)
+  Test  (chr1):
+    Spearman rho:  0.3815
+    Top-20% lift:  1.93x  (random = 1.0x)
+STEP 6: Feature Importance (gain)
+  ext_log_unique_sites: 7633
+  ext_log_n_patients: 1536
+  replication_timing: 448
+  dist_to_nearest_cancer_tss: 121
+  dist_to_nearest_tss: 99
+  tcell_h3k27ac_count: 51
+  ext_n_datasets: 29
+  ext_max_abundance: 0
